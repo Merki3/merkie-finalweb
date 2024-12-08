@@ -1,0 +1,946 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #0c2435;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+}
+.header-text {
+    position: relative; /* Allow absolute positioning of the image */
+    margin-top: 20%; /* Adjust as needed */
+    font-size: 30px;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header-image {
+    position: absolute; /* Position the image absolutely */
+    top: 20%; /* Center vertically */
+    left: 60%; /* Move closer to the right edge */
+    transform: translateY(-50%); /* Center the image vertically */
+    width: 450px; /* Increase the width for a larger image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: add shadow for depth */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+
+
+
+.logo:hover {
+    color: #00bfff; /* Light blue text color on hover */
+    border-color: #00bfff; /* Light blue border on hover */
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff8000;
+    position: absolute;  
+    left: 0; 
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.text {
+    margin-top: 20px;
+    font-size: 28px; /* Larger font for visibility */
+    font-weight: bold; /* Make it stand out */
+    color: #ffcc00; /* Vibrant yellow for contrast against a blue background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add depth with a shadow */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    animation: fadeIn 1s ease-in-out, pulse 2s infinite; /* Add animation */
+    text-transform: uppercase; /* Capitalize for emphasis */
+}
+
+/* Fade-in effect for smooth entry */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulse effect for a subtle glowing effect */
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 204, 0, 1);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
+    }
+}
+
+/* Add spacing around the animated text */
+.text-container {
+    margin-top: 20px;
+    text-align: center; /* Center the animated text */
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff8000;
+}
+.about-col-1 h1 span{
+    color: #ff8000;
+}
+.social-icons {
+    display: flex;
+    gap: 20px; /* Space between the icons */
+    margin-top: 20px; /* Add some space above the icons */
+}
+
+.social-icons a {
+    font-size: 30px; /* Size of the icons */
+    color: #fff; /* White color for the icons */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.social-icons a:hover {
+    color: #ff8000; /* Change color when hovered */
+}
+
+.social-icons i {
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.social-icons a:hover i {
+    transform: scale(1.2); /* Enlarge the icon on hover */
+}
+/*---about-0----*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect */
+.about-col-1 img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-col-2 p {
+    text-align: justify; /* Justifies the text for neat alignment */
+    line-height: 1.8; /* Add spacing between lines for readability */
+    font-size: 18px;
+    color: #e0e0e0; /* A lighter gray for softer contrast */
+    font-family: 'Arial', sans-serif;
+    margin-top: 10px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 34px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff8000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #ffcc00;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+#services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title span{
+    color: #ff8000;
+}
+.container{
+    padding: 90px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    gap: 40px; 
+    /* grid- */
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5,transform 0.5s;
+    box-shadow: 1px 1px 20px #ff8000
+               1px 1px 40px #ff8000
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ff8000;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #ff8000,
+    0 0 25px #ff8000;
+}
+.read:hover {
+    box-shadow: 0 0 5px ff8000,
+    0 0 25px ff8000, 0 0 50px ff8000,
+    0 0 100px ff8000, 0 0 200px ff8000
+}
+
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width: 510px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 90px;
+
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px; 
+}
+.bar{
+    font-size: 23px;
+} 
+.Technical-bars .bar{
+    margin-top: 40px 0;
+}
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5 1s linear forwards;
+    opacity: 0;
+}
+
+.Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+} 
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+.Technical-bars .bar .progress-line span {
+    height: 100%;
+    background-color: #ff8000;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+.progress-line.html span {
+    width: 90%;
+}
+
+/* Progress untuk CSS */
+.Technical-bars .bar .progress-line.css span {
+    width: 60%;
+}
+
+/* Progress untuk Javascript */
+.Technical-bars .bar .progress-line.javascript span {
+    width: 45%;
+}
+
+/* Progress untuk Python */
+.Technical-bars .bar .progress-line.python span {
+    width: 50%;
+}
+
+/* Progress untuk React */
+.Technical-bars .bar .progress-line.react span {
+    width: 75%;
+}
+
+.Technical-bars .bar .progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -20px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line.html span::after{
+    content: "90%";
+}
+.Technical-bars .bar .progress-line.css span::after{
+    content: "60%";
+}
+.Technical-bars .bar .progress-line.javascript span::after{
+    content: "45%";
+}
+.Technical-bars .bar .progress-line.python span::after{
+    content: "50%";
+}
+.Technical-bars .bar .progress-line.react span::after{
+    content: "75%";
+}
+.Technical-bars .bar .progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+.radial-bars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the bars horizontally */
+    align-items: center; /* Ensures bars are vertically aligned */
+    gap: 30px; /* Adds space between the bars */
+}
+.radial-bars .radial-bar {
+    width: 120px; /* Set fixed width for each bar */
+    height: 160px; /* Fixed height for each bar */
+    position: relative;
+    margin: 10px; /* Optional margin between bars */
+}
+.radial-bars .radial-bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset -1;
+    }
+}
+.path {
+    stroke-width: 10;
+    stroke: #ff8000;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;} 
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+        
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+}
+
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+}
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+} 
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;; /*satuan mulai 50 */
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 100;;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 125;;
+    }
+}
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 75;;
+    }
+}
+
+.radial-bars .radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -25px;
+    transform: translate(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.main-text{
+    padding-top: 130px;
+    margin-top: 100px;
+}
+.main-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.main-text h2 span{
+    color: #ff8000;
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        width: 100%;
+        height: auto;
+        padding: 40px 30px;
+        margin-left: 0;
+    }
+    .container1 .heading1 {
+        font-size: 24px;
+    }
+    .Technical-bars .bar {
+        margin-top: 20px;
+    }
+    .radial-bars .radial-bar {
+        width: 100%;
+        height: auto;
+    }
+    .radial-bar .percentage, .radial-bar .text {
+        font-size: 14px;
+    }
+}
+#portfolio {
+    padding: 50px 0; /* Adjust the vertical padding as needed */
+}
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-gap: 20px; /* Space between grid items */
+    margin-top: 50px;
+  }
+  
+  .work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+  }
+  .layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+  }
+  .layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .work:hover img{
+    transform: scale(1.1);
+  }
+  .work:hover .layer{
+    height: 100%;
+  }
+  .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+  }
+  .btn:hover{
+    background: #ff004f;
+  }
+  .contact-left{
+    flex-basis: 35%;
+  }
+  .contact-right{
+    flex-basis: 60%;
+  }
+  .contact-left p{
+    margin-top: 30px;
+  }
+  .contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  .social-icons{
+    margin-top: 30px;
+  }
+  .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+  }
+  .social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+  }
+  .btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+
+  }
+  .contact-right form{
+    width: 100%;
+    
+  }
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  .copyright i{
+    color: #ff004f;
+  }
+
+
+
+  nav .fas{
+    display: none;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .header-text {
+        margin-top: 180%; /* Adjust margin as needed */
+        font-size: 12px; /* Smaller font size for header text */
+    }
+    .header-image {
+        width: 70%; /* Adjust width for smaller screens */
+        top: 10%; /* Adjust vertical position as needed */
+    }
+    
+    .header-text {
+        left: -80px; /* Adjust left position for smaller screens */
+    }
+    .header-text h1 {
+        font-size: 16px; /* Smaller font size for h1 */
+    }
+      nav .fas{
+        display: block;
+        font-size: 25px;
+        
+      }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title {
+        font-size: 35px;
+        text-align: left; /* Align text to the left */
+        margin-left: 2px; /* Move further left */
+    }
+    
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        margin-left: -40px; /* Move further left */
+        margin-right: auto; /* Ensure they align to the left */
+    }
+    .contact-left{
+        font-size: 14px;
+        flex-basis: 100%;
+        margin-left: -80px; /* Move further left */
+        margin-right: auto; /* Ensure they align to the left */
+    }
+    .about-col-2 {
+        font-size: 10px;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 p{
+        font-size: 10px;
+    }
+    .copyright{
+        flex-basis: 100%;
+        margin-left: -60px; /* Move further left */
+        margin-right: auto; /* Ensure they align to the left */
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .header-image {
+            width: 70%; /* Adjust width for smaller screens */
+            left: 1%; /* Ensure it stays on the left */
+            top: -70%; /* Adjust vertical position as needed */
+  
+    #msg{
+        color: #61b752;
+        margin-top: -40px;
+        display: block;
+    }
+    .container {
+        flex-basis: 100%;
+        margin-left: -100px; /* Move further left */
+        margin-right: auto; /* Ensure they align to the left */
+    }
+    #portfolio {
+        padding: 20px 0; /* Adjust vertical padding for smaller screens */
+    }
+
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Make items full width */
+        justify-items: start; /* Align items to the left */
+        margin-left: -20px; /* Optional: move the entire list left */
+    }
+
+    .work {
+        position: absolute; /* Position it absolutely */
+        left: 0; /* Align to the left */
+        /* You can also set top, bottom, etc. as needed */
+    }
+}
+    .container1 {
+        margin-left: 0; /* Reset margin for container1 */
+        padding: 0 10px; /* Add some padding if needed */
+    }
+
+    .radial-bars {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping of circles */
+        justify-content: flex-start; /* Align circles to the left */
+    }
+
+    .radial-bar {
+        margin: 10px; /* Adjust margin for spacing between circles */
+        flex: 1 1 45%; /* Allow two circles per row, adjust as needed */
+        max-width: 100px; /* Set a max width for circles */
+    }
+}
+
+/* Additional styles for radial bars */
+.radial-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align text and percentage */
+    margin: 10px; /* Default margin for larger screens */
+}
+
+.percentage {
+    font-size: 12px; /* Adjust font size as needed */
+    margin-top: 10px; /* Space between percentage and text */
+}
+
+.text {
+    font-size: 14px; /* Adjust font size as needed */
+}
+.contact-left, .contact-right{
+    flex-basis: 100%;
+}
+.copyright{
+    font-size: 14px;
+}
+    }

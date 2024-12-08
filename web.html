@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/01cba353f9.js" crossorigin="anonymous"></script>
+
+    <!-- Include the Particle.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0"></script>
+    
+</head>
+
+<body>
+    <!-- Particle.js Background Container -->
+    <div id="particles-js"></div>
+    <section id="header" class="fade-in">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Final Project</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+    <p>Hello, It's me</p>
+    <h1>Merkie <span>Jade</span> Yvan <span>Fuerte</span></h1>
+    <p><span class="text"></span></p> <!-- Animated text will appear here -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/mjyvan.fuerte/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.tiktok.com/@mrfuerte_" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/merkie_fuerte/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <img src="https://i.ibb.co/QcwZFp0/file-4.png" alt="Profile Image" class="header-image">
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://i.ibb.co/4fx7PFF/mj.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>As an 18-year-old Computer Science student, I am deeply passionate about the transformative power of technology. I am captivated by how advancements in IT are reshaping every aspect of our lives, from communication to healthcare, education, and beyond. My curiosity drives me to explore new innovations, and I am dedicated to honing my skills to contribute meaningfully to this ever-evolving field. With a vision to make a positive impact, I aspire to create solutions that improve lives, solve real-world problems, and inspire others to embrace the potential of technology.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('goals')">Goals</p>
+                        <p class="tab-links" onclick="opentab('dreams')">Dreams</p>
+                        <p class="tab-links" onclick="opentab('inspirations')">Inspirations</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="goals">
+                        <ul>
+                            <li><span>Master Programming Skills</span><br>Become proficient in multiple programming languages and frameworks to build efficient, scalable software.</li>
+                            <li><span>Develop Problem-Solving Abilities</span><br>Hone analytical and critical thinking skills to tackle complex computational problems.</li>
+                            <li><span>Make a Positive Impact</span><br>Use technology to solve real-world problems, improve lives, and address global challenges</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="dreams">
+                        <ul>
+                            <li><span>Become a Skilled Developer</span><br>Visionaries like Steve Jobs, Bill Gates, Elon Musk, and Mark Zuckerberg, who revolutionized the tech industry</li>
+                            <li><span>Work for Renowned Tech Companies</span><br>Work for famous and renowned companies like google, microsoft, facebook etc.</li>
+                            <li><span>Personal Experiences</span><br>Real-life challenges or problems encountered by the student that can be solved through technology drive the motivation to study and pursue solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="inspirations">
+                        <ul>
+                            <li><span>Tech Innovators and Entrepreneurs:</span><br>A core dream is to master programming 
+                                languages and become proficient in creating software that can solve 
+                                real-world problems.</li>
+                            <li><span>Family and Friends</span><br> Support from family and friends, especially those who believe in my potential and encourage my pursuit of tech, is a powerful motivator.</li>
+                            <li><span>My Crush</span><br>My crush is also a big source of inspiration for me. The admiration I feel for her motivates me to work harder, strive for excellence, and pursue my passions with more enthusiasm.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Elementary</span><br>I studied elementary at Cabeza Elementary School, where I graduated as the 2nd Honorary Mention. </li>
+                            <li><span>Junior High School</span><br>I continued my education at Northwestern University, where I completed my Junior High School with High Honors.</li>
+                            <li><span>Senior High School</span><br>I further pursued my academic journey at Northwestern University, where I graduated with Honors. .</li>
+                            <li><span>College</span><br>Currently, I am a first-year student studying Computer Science at Northwestern University, excited to expand my knowledge and skills in the field of technology..</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Hobbies">
+                        <ul>
+                            <li><span>Coding</span><br>One of my hobbies is coding, as I enjoy creating and solving problems through programming. </li>
+                            <li><span>Music</span><br>Another one of my hobbies is playing instruments, as it allows me to express my creativity and connect with others through music.</li>
+                            <li><span>Photography</span><br>Another one of my hobbies is photography, as I love capturing moments and expressing my perspective through the lens.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="fade-in">
+    <!-- Skills Section -->
+    <div id="skills">
+        <div class="container">
+        <div class="services" id="services"></div>
+        <h1 class="sub-title">My <span>Skills</span></h1>
+        <section>
+            <div class="container1" id="skills">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar">
+                        <i style="color: #c95d2e" class='fa-solid fa-c'></i>
+                        <div class="info">
+                            <span>C</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i style="color: #147bbc" class="bx bxl-html5"></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i style="color: #b0bc1e" class='bx bxl-javascript'></i>
+                        <div class="info">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progress-line javascript">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i style="color: #c322c9" class='bx bxl-python'></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i style="color: #69bcbc" class='bx bxl-css3'></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line react">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container1">
+                <h1 class="heading1">Professional Skills</h1>
+                <div class="radial-bars">
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">Communication</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">TeamWork</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My <span>Projects</span></h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="https://i.ibb.co/F7qyVcf/Annotation-2024-12-07-223254.jpg">
+              <div class="layer">
+                <h3>Binary Calculator</h3>
+                <p>This program performs both addition and subtraction in binary, which is useful and important for rechecking the accuracy of your calculations.</p>
+
+              </div>
+            </div>
+            <div class="work">
+              <img src="https://i.ibb.co/qM8GPRp/Annotation-2024-12-07-230940.jpg">
+              <div class="layer">
+                <h3>Programming Lab Act</h3>
+                <p>This program, created in our programming class, includes five features: calculating the sum of elements, accessing an item by its index, printing numbers in reverse order.</p>
+                
+              </div>
+            </div>
+            <div class="work">
+                <img src="https://i.ibb.co/HGQYn9j/Annotation-2024-12-07-234608.jpg">
+                <div class="layer">
+                    <h3>Personal Project</h3>
+                    <p>"This project, created for personal purposes, 'can be sent to loved ones' and features the ability to 'play songs, display messages, and show GIFs,' providing a fun and interactive way to connect with others."</p>
+                    
+                  </div>
+              </div>
+              <div class="work">
+                <img src="https://i.ibb.co/3hPtfz2/Annotation-2024-12-07-232432.jpg">
+                <div class="layer">
+                    <h3>Website</h3>
+                    <p>"The first website I created for our computing class, which is this website, 'displays my skills, projects, and an About Me section,' offering an insight into my work and personal background."</p>
+                    
+                  </div>
+                  
+              </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+      <!--------------------------------------------contact------------------->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p><i class="fas fa-paper-plane"></i> merkieyvan@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>09455687245</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mjyvan.fuerte/" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                        <a href="https://www.tiktok.com/@mrfuerte_" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/merkie_fuerte/" target="_blank"> <i class="fab fa-instagram"></i> </a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Merkie. Made by <i class="fas fa-heart"></i> Merkie Fuerte</p>
+        </div>
+      </div>
+    <!-- Tab Content Script -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- Include Typed.js library -->
+    <script>
+        var typed = new Typed(".text", {
+            strings: ["Computer Science Student", "1st Year Student", "Aspiring Software Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+
+    <!-- Initialize Particles.js -->
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 600
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+    
+            const options = {
+                root: null, // Use the viewport as the root
+                rootMargin: "0px",
+                threshold: 0.1 // Trigger when 10% of the section is visible
+            };
+    
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target); // Stop observing once the section is visible
+                    }
+                });
+            }, options);
+    
+            sections.forEach(section => {
+                observer.observe(section); // Start observing each section
+            });
+        });
+    </script>
+
+    <script>
+
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="10px";
+        }
+        function closemenu(){
+            sidemenu.style.right="-180px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby88Rqbm5TdVLfkR8rf6nzHcbu4obQCf6x6fio7ftk0nAHVed_8RrTfYplUxcv2LXIc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
